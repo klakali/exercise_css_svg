@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* End of General Rules */
+body {
+		min-height: 100%;
+		background-color: #F08D80;
+}
+.container {
+	height: 100vh;
+	width: 90%;
+	margin: 0 auto;
+}
+h1 {
+	color: #fff;
+	text-align: center;
+	padding: 1.5em;
+	text-transform: uppercase;
+	font: 4em arial, sans-serif;
+	letter-spacing: 0.1em;
+}
+.egg-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+}
+.egg {
+	overflow: hidden;
+	margin: 0.4em;
+	width: 13em;
+	height: 18em;
+	border-radius: 50%/60% 60% 40% 40%;
+	border: .1em solid #fff;
+}
+.egg-2 {
+	background-color: #FF98FD;
+}
+.egg-3 {
+	display: flex;
+	background-color: #47BBC3;
+}
+.element-1 {
+	height: 20%;
+	background-color: #88EDA8;
+}
+.element-1:not(:last-child) {
+	border-bottom: .15em solid #fff;
+}
+.element-1:nth-child(even) {
+  background-color: #FFD863;
+}
+.element-3:not(:first-child) {
+	width: 20%;
+	height: 100%;
+	border-right: .1em solid #fff;
+	border-radius: 50%/60% 60% 40% 40%;
+}
