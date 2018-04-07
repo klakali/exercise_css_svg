@@ -3,30 +3,29 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 /* End of General Rules */
 body {
-		min-height: 100%;
-		background-color: #F08D80;
+    min-height: 100%;
+    background-color: #F08D80;
 }
 .container {
 	height: 100vh;
 	width: 90%;
 	margin: 0 auto;
-	padding-bottom: 1em;
 }
 h1 {
 	color: #fff;
 	text-align: center;
-	padding: 1.5em 0em;
+	padding: 0.8em 0em;
 	text-transform: uppercase;
-	font: 4em arial, sans-serif;
+	font: 4.5em arial, sans-serif;
 	letter-spacing: 0.1em;
 }
 .egg-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+    align-items: center;
 	margin: 0 auto;
 }
 .egg {
@@ -36,10 +35,24 @@ h1 {
 	height: 18em;
 	border-radius: 50%/60% 60% 40% 40%;
 }
+.egg-1 {
+    -webkit-animation: egg-left-animation 1s linear infinite alternate;
+    -moz-animation: egg-left-animation 1s linear infinite alternate;
+    -o-animation: egg-left-animation 1s linear infinite alternate;
+    animation: egg-left-animation 1s linear infinite alternate;
+}
 .egg-2 {
-	background-color: #FF98FD;
+    background-color: #FF98FD;
+  -webkit-animation: mycolor 3s infinite;
+  -moz-animation: mycolor 3s infinite;
+  -o-animation: mycolor 3s infinite;
+   animation: mycolor 3s infinite;
 }
 .egg-3 {
+    -webkit-animation: egg-right-animation 1s linear infinite alternate;
+    -moz-animation: egg-right-animation 1s linear infinite alternate;
+    -o-animation: egg-right-animation 1s linear infinite alternate;
+    animation: egg-right-animation 1s linear infinite alternate;
 	display: flex;
 	background-color: #47BBC3;
 }
@@ -58,4 +71,59 @@ h1 {
 	height: 100%;
 	border-right: .1em solid #fff;
 	border-radius: 50%/60% 60% 40% 40%;
+}
+/* Animation | Color change */
+@-webkit-keyframes mycolor {
+    0%  {background-color: #fff;}
+    50%  {background-color: #FFD863;}
+    100% {background-color: #88EDA8;}
+}
+@-moz-keyframes mycolor {
+    0%  {background-color: #fff;}
+    50%  {background-color: #FFD863;}
+    100% {background-color: #88EDA8;}
+}
+@-o-keyframesmycolor {
+    0%  {background-color: #fff;}
+    50%  {background-color: #FFD863;}
+    100% {background-color: #88EDA8;}
+}
+@keyframes mycolor {
+    0%  {background-color: #fff;}
+    50%  {background-color: #FFD863;}
+    100% {background-color: #88EDA8;}
+}
+/* Animation rotate left */
+@-webkit-keyframes egg-left-animation {
+    0% {transform: rotate(-10deg);}
+    100% {transform: rotate(10deg);}
+}
+@-moz-keyframes egg-left-animation {
+    0% {transform: rotate(-10deg);}
+    100% {transform: rotate(10deg);}
+}
+@-o-keyframesegg-left-animation {
+    0% {transform: rotate(-10deg);}
+    100% {transform: rotate(10deg);}
+}
+@keyframes egg-left-animation {
+    0% {transform: rotate(-10deg);}
+    100% {transform: rotate(10deg);}
+}
+/* Animation rotate right */
+@-webkit-keyframes egg-right-animation {
+    0% {transform: rotate(10deg);}
+    100% {transform: rotate(-10deg);}
+}
+@-moz-keyframes egg-right-animation {
+    0% {transform: rotate(10deg);}
+    100% {transform: rotate(-10deg);}
+}
+@-o-keyframesegg-right-animation {
+    0% {transform: rotate(10deg);}
+    100% {transform: rotate(-10deg);}
+}
+@keyframes egg-right-animation {
+    0% {transform: rotate(10deg);}
+    100% {transform: rotate(-10deg);}
 }
